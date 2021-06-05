@@ -11,7 +11,7 @@ import java.time.Duration;
 public class FluxAndMonoErrorTest {
 
     @Test
-    public void ErrorTestHAndling(){
+    public void ErrorTestHandling(){
         Flux<String> flux = Flux.just("A","B","C")
                 .concatWith(Flux.error(new RuntimeException("Exception Occured")))
                 .concatWith(Flux.just("D"));
