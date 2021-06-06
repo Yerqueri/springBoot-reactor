@@ -8,14 +8,14 @@ import java.time.Duration;
 
 public class FluxAndMonoWithTimeTest {
 
-    @Test
-    public void infinite_seq() throws InterruptedException {
-        Flux<Long> infiniteFlux = Flux.interval(Duration.ofMillis(20)).log();
-
-        infiniteFlux.subscribe(System.out::println);
-
-        Thread.sleep(100);
-    }
+//    @Test
+//    public void infinite_seq() throws InterruptedException {
+//        Flux<Long> infiniteFlux = Flux.interval(Duration.ofMillis(20)).log();
+//
+//        infiniteFlux.subscribe(System.out::println);
+//
+//        Thread.sleep(100);
+//    }
 
     @Test
     public void infinite_seq_test(){
