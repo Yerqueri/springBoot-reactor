@@ -14,7 +14,7 @@ public class FluxAndMonoWithTimeTest {
 
         infiniteFlux.subscribe(System.out::println);
 
-        Thread.sleep(3000);
+        Thread.sleep(100);
     }
 
     @Test
